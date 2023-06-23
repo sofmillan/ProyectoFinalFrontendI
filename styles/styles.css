@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
+/* - Mobile: 480px
+- Desktop: 1440px */
+
+:root{
+    --primary-violet: #8B48BF;
+    --primary-blue: #3CDDF3;
+    --dark-blue: #232851;
+    --dark-gray-blue: #1E1E26;
+    --light-gray: rgb(249, 249, 249); 
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+.container div{
+    width: 450px;
+}
+
+.main_banner{
+    padding: 4rem 2rem;
+}
+
+.main_banner .photo_container img{
+    width: 100%;
+}
+
+.main_banner .banner_text_container{
+    text-align: right;
+    padding-top:1rem;
+}
+
+ 
+.main_banner .banner_text_container h1{
+    font-weight: 700;
+    font-size:2.75rem;
+    line-height: 3rem;
+    
+}
+
+.main_banner .banner_text_container p{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.main_banner .banner_text_container button{
+    border:none;
+    display: inline-block;
+    color: white;
+    background-color: var(--primary-violet);
+    padding: 10px;
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+}
+
+.purple_title{
+    background-color: var(--primary-violet);
+    padding: 2.5rem 0;
+    color:white;
+}
+
+
+.purple_title h2{
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+
+
+.purple_title p{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.best_container{
+    margin:2rem 0;
+}
+.best_container h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    
+}
+.athletes_container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin:3rem 0;
+}
+
+.athletes_container .athlete{
+    width:445px;
+    text-align: center;
+    background-color: var(--light-gray);
+    position: relative;
+    padding: 5.5rem 0.5rem 1rem;
+
+}
+
+.athletes_container .athlete img{
+    position: absolute;
+    top:-30px;
+    right:calc(50% - 40px);
+}
+
+.athletes_container .athlete h3{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.athletes_container .athlete p{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #B9B9C1;
+}
