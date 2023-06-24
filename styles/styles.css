@@ -160,7 +160,7 @@ button:hover{
     top:0;
 } 
 
-.pros_section .items .pro_item .title .button{
+.pros_section .items .pro_item .title .point{
     border:none;
     color: white;
     display: inline-block;
@@ -392,6 +392,11 @@ footer p{
         border-radius: 30px 0 0 30px;
     } 
 
+    .pros_section .items .pro_item > .text{
+        margin-top:1rem;
+        margin-right:1rem;
+    } 
+
     .teams_section{
         background-color: var(--primary-blue);
     }
@@ -403,6 +408,11 @@ footer p{
         width:320px;
         text-align: center;
         margin: 2rem auto;
+    }
+
+    .teams_section .button_container button{
+        background-color: var(--dark-blue);
+        color:white;
     }
 
     .award_section{
