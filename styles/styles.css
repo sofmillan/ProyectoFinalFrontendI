@@ -10,7 +10,6 @@
     --dark-blue: #232851;
     --dark-gray-blue: #1E1E26;
     --light-gray: rgb(249, 249, 249); 
-    
 }
 
 *{
@@ -27,6 +26,7 @@ button:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
 .header{
     display: flex;
     justify-content: space-evenly;
@@ -118,7 +118,7 @@ button:hover{
     border-radius: 50px;
 }
 
-.purple_title{
+.pros_section .pros_introduction{
     background-color: var(--primary-violet);
     padding: 2.5rem 0;
     color:white;
@@ -126,42 +126,41 @@ button:hover{
 }
 
 
-.purple_title h2{
+.pros_section .pros_introduction h2{
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 2.5rem;
 }
 
 
-.purple_title p{
+.pros_section .pros_introduction p{
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.5rem;
 }
 
 
-
-.items{
+.pros_section .items{
     background-color: var(--light-gray);
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
     padding:2rem 5rem;
 }
-.items .pro-item{
+.pros_section .items .pro_item{
     max-width: 485px;
     position:relative;
     padding-top:3rem;
     margin:1rem 4rem;
 }
 
-.items .pro-item .title{
+.pros_section .items .pro_item .title{
     position: absolute;
     left:-100px;
     top:0;
 } 
 
-.items .pro-item .title .button{
+.pros_section .items .pro_item .title .button{
     border:none;
     color: white;
     display: inline-block;
@@ -174,23 +173,23 @@ button:hover{
     margin-right:1.5rem;
 } 
 
-.items .pro-item .title .text{
+.pros_section .items .pro_item .title .text{
     font-weight: 700;
     font-size: 1rem;
     line-height:1.5rem;
 } 
 
-.items .pro-item > .text{
+.pros_section .items .pro_item > .text{
     font-weight: 500;
     font-size: 1rem;
     line-height:1.5rem;
     color: #B3B2B7;
 } 
 
-.best_container{
+.award_section{
     margin:3rem 0 8rem;
 }
-.best_container h2{
+.award_section h2{
     text-align: center;
     font-weight: 700;
     font-size: 2.5rem; 
@@ -231,7 +230,7 @@ button:hover{
     line-height: 1.5rem;
     color: #B9B9C1;
 }
-.best_container  button{
+.award_section  button{
     border:none;
     display: block;
     color: white;
@@ -243,12 +242,8 @@ button:hover{
     margin: 0 auto;
 }
 
-.best_container  button:hover{
-    opacity: 0.6;
-    cursor: pointer;
-}
 
-.terms_container{
+.teams_section{
     background-color: var(--primary-violet);
     display: flex;
     justify-content: space-around;
@@ -257,17 +252,17 @@ button:hover{
     flex-wrap: wrap;
 }
 
-.terms_container .title_container{
+.teams_section .title_container{
     width: 420px;
 }
-.terms_container .title_container h2{
+.teams_section .title_container h2{
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 3rem;
     color:white;
 }
 
-.terms_container .button_container button{
+.teams_section .button_container button{
     border:none;
     display: block;
     color:var(--primary-violet);
@@ -291,19 +286,19 @@ footer{
     padding:2rem 0;
 }
 
-footer .logos{
+footer .logos_container{
     display: flex;
     gap:0.5rem;
     flex-direction: column;
 }
 
-footer .logos ul{   
+footer .logos_container ul{   
     display: flex;
     gap:0.8rem;
     margin-top:2rem;
 }
 
-footer .logos ul li{
+footer .logos_container ul li{
     width: 20px;
     height: 20px;
     list-style: none;
@@ -372,45 +367,45 @@ footer p{
         padding-bottom: 3rem;
     }
 
-    .purple_title{
+    .pros_section .pros_introduction{
         background-color: var(--primary-blue);
         padding: 2rem;
         margin-bottom: 2rem;
     }
 
-    .purple_title h2{
+    .pros_section .pros_introduction h2{
         margin-bottom: 2.5rem;
     }
     
-    .items{
+    .pros_section .items{
         padding:1rem 0 1rem 3rem;
         gap:3rem;
     }
-    .items .pro-item{
+    .pros_section .items .pro_item{
         margin:0 ;
         width: 100%;
     }
-    .items .pro-item .title{
+    .pros_section .items .pro_item .title{
         left:0px;
         width:100%;
         background-color: rgba(139, 72, 191, 0.5);
         border-radius: 30px 0 0 30px;
     } 
 
-    .terms_container{
+    .teams_section{
         background-color: var(--primary-blue);
     }
-    .terms_container .title_container{
+    .teams_section .title_container{
         text-align:center;
         margin: 0;
     }
-    .terms_container .title_container h2{
+    .teams_section .title_container h2{
         width:320px;
         text-align: center;
         margin: 2rem auto;
     }
 
-    .best_container{
+    .award_section{
         margin-bottom: 3.5rem;
     }
     .athletes_container .athlete{
@@ -436,16 +431,16 @@ footer p{
         right:calc(50% - 27%);
     }
 
-    footer .logos{
+    footer .logos_container{
         flex-direction: column-reverse;
         width: 100%;
         justify-content: center;
     }
-    footer .logos .logo{
+    footer .logos_container .store_logo_container{
         margin: 1rem auto;
     }
 
-    footer .logos ul{
+    footer .logos_container ul{
         width: 100%;
         justify-content: space-around;
     }
