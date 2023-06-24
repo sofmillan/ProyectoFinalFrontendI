@@ -5,7 +5,7 @@
 - Desktop: 1440px */
 
 :root{
-    --primary-violet: #8B48BF;
+    --primary-violet: rgb(139, 72, 191);
     --primary-blue: #3CDDF3;
     --dark-blue: #232851;
     --dark-gray-blue: #1E1E26;
@@ -23,9 +23,51 @@ body{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding:2rem 0;
+    align-items: center;
+    margin:2rem 0;
+}
+.header .container_hamburger{
+    display:none;
+}
+.header .menu ul{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.header .menu ul li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height:1.4rem;
+}
+
+.header .menu ul li:hover{
+    color:#242E52;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.header .contacts button{
+    border:none;
+    display: inline-block;
+    color: white;
+    background-color: var(--primary-violet);
+    padding: 10px;
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+    box-shadow:  6px 6px 16px #ececec; 
+    
+}
+
 .container{
     display:flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
 }
 
@@ -76,6 +118,7 @@ body{
     background-color: var(--primary-violet);
     padding: 2.5rem 0;
     color:white;
+    margin-top:2rem;
 }
 
 
@@ -92,14 +135,7 @@ body{
     line-height: 1.5rem;
 }
 
-.best_container{
-    margin:3rem 0 8rem;
-}
-.best_container h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.5rem; 
-}
+
 
 .items{
     background-color: var(--light-gray);
@@ -147,12 +183,20 @@ body{
     color: #B3B2B7;
 } 
 
+.best_container{
+    margin:3rem 0 8rem;
+}
+.best_container h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem; 
+}
 
 .athletes_container{
     display: flex;
     justify-content: center;
     padding: 1rem 2rem;
-    margin:3rem 0;
+    margin:4rem 0;
 }
 
 .athletes_container .athlete{
@@ -195,6 +239,10 @@ body{
     margin: 0 auto;
 }
 
+.best_container  button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
 
 .terms_container{
     background-color: var(--primary-violet);
@@ -202,6 +250,7 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 3rem 0;
+    flex-wrap: wrap;
 }
 
 .terms_container .title_container{
@@ -234,13 +283,14 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+    padding:2rem 0;
 }
 
 footer .logos{
     display: flex;
     gap:0.5rem;
     flex-direction: column;
-    position: relative;
 }
 
 footer .logos ul{   
@@ -289,4 +339,117 @@ footer form input[type="submit"]{
     text-align: center;
     border-radius: 30px;
     margin-right:1.5rem;
+}
+
+footer p{
+    position:absolute;
+    color:#8C8C94;
+    bottom:20px;
+    right:calc(50% - 37%);
+}
+
+@media (max-width:700px ){
+    .header{
+        justify-content:space-around;
+    }
+    .header .menu {
+        display: none;
+    }
+    
+    .header .contacts {
+        display: none;
+    }
+
+    .header .container_hamburger {
+        display: block;
+    }
+
+    .main_banner {
+        padding-bottom: 3rem;
+    }
+
+    .purple_title{
+        background-color: var(--primary-blue);
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .purple_title h2{
+        margin-bottom: 2.5rem;
+    }
+    
+    .items{
+        padding:1rem 0 1rem 3rem;
+        gap:3rem;
+    }
+    .items .pro-item{
+        margin:0 ;
+        width: 100%;
+    }
+    .items .pro-item .title{
+        left:0px;
+        width:100%;
+        background-color: rgba(139, 72, 191, 0.5);
+        border-radius: 30px 0 0 30px;
+    } 
+
+    .terms_container{
+        background-color: var(--primary-blue);
+    }
+    .terms_container .title_container{
+        text-align:center;
+        margin: 0;
+    }
+    .terms_container .title_container h2{
+        width:320px;
+        text-align: center;
+        margin: 2rem auto;
+    }
+
+    .best_container{
+        margin-bottom: 3.5rem;
+    }
+    .athletes_container .athlete{
+        display:none;
+    }
+    .athletes_container .first{
+        display:block;
+    }
+
+
+    footer{
+        height: auto;
+        flex-direction: column-reverse;
+        padding:3rem 0;
+    }
+
+    footer form{
+        margin-bottom: 1rem;
+    }
+
+    footer p{
+        bottom:10px;
+        right:calc(50% - 27%);
+    }
+
+    footer .logos{
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+    }
+    footer .logos .logo{
+        margin: 1rem auto;
+    }
+
+    footer .logos ul{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    footer form input[type="submit"]{
+        width: 270px;
+      
+    }
+
+    
 }
